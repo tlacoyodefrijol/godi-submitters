@@ -1,0 +1,135 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
+
+#divider {
+  height:5px;
+}
+
+//using a table for map keys
+
+table {
+    position:sticky;
+    font-family: helvetica, sans-serif;
+    font-size: 12px;
+    border-collapse: collapse;
+    width: 95%;
+}
+
+td, th {
+    max-width: 50%;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+
+//'OGP': '#f5bb81',//Belongs to OGP only
+
+//defaultFill: '#bababa'
+
+.title {
+  text-align:center;
+}
+//'GODI15' Submitted to GODI 2015
+.first {
+  width: 10%;
+  height: auto;
+  background-color: #009fe5;
+}
+//'GODI15+OKI': '#e2cc41', //Submitted in 2015 and is part of OKI Network
+.second {
+  width: 10%;
+  height: auto;
+  background-color:#06e8c1;
+}
+//'THREE': '#e29841',//Submited in 2015 is OKI and either OGP or Barometer
+.third {
+  width: 10%;
+  height: auto;
+  background-color:#0DEC5C;
+}
+//'ALL': '#269a43',//Submitted in 2015k, is OKI, Barometer and OGP
+.fourth {
+  width: 10%;
+  height: auto;
+  background-color:#2ff014;
+}
+
+//'GODI15+Barometer':'#ffe438',//Submitted in 2015, has info from Barometer
+.fifth {
+  width: 10%;
+  height: auto;
+  background-color:#9cf31b;
+}
+//'GODI15+OGP':'#82741d',//Submitted in 2015, belongs to OGP
+.sixth {
+  width: 10%;
+  height: auto;
+  background-color:#f7e823;
+}
+//'Barometer': '#f3eab5',//Barometer information Only
+.seventh {
+  width: 10%;
+  height: auto;
+  background-color:#fb892b;
+}
+.eighth {
+  width: 10%;
+  height: auto;
+  background-color:#ff3236;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
