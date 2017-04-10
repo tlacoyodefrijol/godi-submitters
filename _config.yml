@@ -9,8 +9,8 @@
 title: GODI
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  A map to visualize GODI gaps and possible wranglers and submitters.
-baseurl: "/godi-map" # the subpath of your site, e.g. /blog
+  A map to visualize GODI gaps and where we had submissions for 2016.
+baseurl: "/godi-submitters" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
